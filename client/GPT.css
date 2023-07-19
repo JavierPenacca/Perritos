@@ -1,0 +1,52 @@
+/* Estilos para los contenedores principales */
+/* Pagination.css */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .data-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cambiar el número según el diseño deseado */
+    gap: 20px;
+  }
+  
+  /* Estilos para los botones de paginación */
+  .pagination button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .pagination button:hover {
+    background-color: #ddd;
+  }
+  
+  .pagination button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .pagination button.active {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Estilos para las tarjetas de elementos */
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .card h2 {
+    margin-bottom: 5px;
+  }
+  
+  .card p {
+    margin-bottom: 10px;
+  }
+  
