@@ -11,9 +11,7 @@ import {
   filterCreated,
   orderByName,
 } from "../actions";
-// importo los componentes que voy a usar
 import Card from "../components/Card";
-// import Paginado from "./Paginado";
 import Pagination from "../components/Pagination";
 import SearchBar from "../components/SearchBar";
 import Footer from "../components/Footer";
@@ -30,11 +28,7 @@ export default function Home() {
   const indexOfLastDog = currentPage * dogsPerPage;
   const indexOfFirstDog = indexOfLastDog - dogsPerPage;
   const currentDogs = allDogs.slice(indexOfFirstDog, indexOfLastDog);
-  const apiUrl = "/api/data"; // Ajusta la URL de la API según tus necesidades
-
-  // const paginado = (pageNumber) => {
-  //   setCurrentPage(pageNumber);
-  // };
+  const apiUrl = "/api/data";
 
   useEffect(() => {
     dispatch(getDogs());

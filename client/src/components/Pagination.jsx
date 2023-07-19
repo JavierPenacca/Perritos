@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import './Pagination.css';
+import '../components/Pagination.css';
 
 const Pagination = ({ apiUrl }) => {
   const [data, setData] = React.useState([]);

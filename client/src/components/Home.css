@@ -28,6 +28,11 @@
   transform: translateX(-50%);
   width: 100%;
 }
+.data-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
 .header2 {
   font-family: "Epilogue";
   display: flex;
@@ -46,11 +51,11 @@
   transform: translateX(-50%);
   width: 100%;
 }
-.paginado{
+/* .paginado{
     font-family: "Epilogue";
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     align-items: center;
     height: 3rem;
     justify-content: center;
@@ -70,12 +75,7 @@
 .cards {
   flex-basis: calc(50% - 10px);
   margin-bottom: 20px;
-}
-.data-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 20px;
-}
+} */
 
 
 
