@@ -1,0 +1,62 @@
+.container{
+    position: relative;
+}
+  
+.imageContainer {
+    background-image: url('../assest/Fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .landing-logo {
+    width: 500px;
+  }
+  
+.buttonContainer {
+    position:absolute;
+    width: 200px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 20px;
+    padding: 10px 20px;
+    background:crimson;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+.buttonContainer:hover{
+    background: purple;
+}
+
+.SocialLink {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.SocialLink a {
+	padding: 0px 20px;
+}
+
+.SocialLink a:hover {
+	transform: scale(1.2);
+    background: purple;
+}
+
+.SocialLink svg {
+	color: rgba(18, 15, 15, 0.8);
+}

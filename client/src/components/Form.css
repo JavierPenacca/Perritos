@@ -1,0 +1,72 @@
+/* Form.css */
+
+.error {
+  color: red;
+}
+
+.divTemp {
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 10px; */
+  background-color: #92e1bb;
+  height: 25px;
+  width: fit-content;
+  text-align: center;
+  position: center;
+  flex-direction: row;
+  margin: 5px;
+}
+
+.botonX {
+  margin-left: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+}
+
+.detail-container-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #92e1bb;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.detail-container-button:hover {
+  background-color: #70c7a3;
+}
+.fondo-verde {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* margin: 0 auto; */
+  flex-direction: column;
+
+  background-color: #196deb;
+  width: 500px;
+  padding: 10px;
+
+}
+.form-input-cont {
+  margin: 7px;
+}
+.contenedor-completo{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temp-cent{
+  display: flex;
+  flex-direction: row;
+  margin: 0 5px;
+  justify-content: center;
+  max-width: 500px;
+  flex-wrap: wrap;
+}

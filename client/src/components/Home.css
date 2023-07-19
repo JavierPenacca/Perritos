@@ -1,0 +1,92 @@
+.container {
+  position: relative;
+  background-image: url("../assest/Fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  font-family: "Epilogue";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 3rem;
+  justify-content: center;
+  overflow: hidden;
+  background: #f1f1f1;
+  padding: 0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.header2 {
+  font-family: "Epilogue";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 3rem;
+  justify-content: center;
+  overflow: hidden;
+  /* background: #db1616; */
+  padding: 0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.paginado{
+    font-family: "Epilogue";
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    height: 3rem;
+    justify-content: center;
+    overflow: hidden;
+    background: #beddce;
+    padding: 0;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    position: absolute;
+    top: 127px;
+    left: 50%;    
+    transform: translateX(-50%);
+    width: 50%;
+    font-size: 16px;
+    color:#fff;
+}
+.cards {
+  flex-basis: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+.data-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+
+
+/* .prueba {
+  top: 10;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-size: 16px;
+  position: fixed;
+} */

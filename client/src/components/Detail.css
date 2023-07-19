@@ -1,0 +1,56 @@
+.container {
+    position: relative;
+    background-image: url("../assest/Fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .detail-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .detail-container h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .detail-container img {
+    max-width: 500px;
+    max-height: 700px;
+    margin-bottom: 20px;
+  }
+  
+  .detail-container h4 {
+    font-size: 18px;
+  }
+  
+  .detail-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #92e1bb;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .detail-container button:hover {
+    background-color: #70c7a3;
+  }
+  .loading {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #92e1bb;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
