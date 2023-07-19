@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "./SearchBar.css";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
@@ -9,6 +9,7 @@ import Logo2 from "../assest/Logo-2.jpg";
 export default function SearchBar() {
   const dispatch = useDispatch();
   const [name, setName] = useState("");
+  const history = useHistory();
 
   function handleInputChange(e) {
     e.preventDefault();
@@ -17,6 +18,8 @@ export default function SearchBar() {
   function handleSubmit(e) {
     e.preventDefault();
     dispatch(getNameDog(name));
+    setName("");
+    history.push("/search");
   }
 
   return (
@@ -31,14 +34,12 @@ export default function SearchBar() {
         <input
           type="text"
           placeholder="Enter dog name..."
+          value={name}
           onChange={(e) => handleInputChange(e)}
         />
         <button
           type="submit"
-          onClick={(e) => {
-            handleSubmit(e);
-            setName("");
-          }}
+          onClick={(e) => handleSubmit(e)}
         >
           Buscar
         </button>

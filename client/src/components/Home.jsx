@@ -12,7 +12,7 @@ import {
   orderByName,
 } from "../actions";
 import Card from "../components/Card";
-import Pagination from "../components/Pagination";
+import Paginado from "../components/Pagination";
 import SearchBar from "../components/SearchBar";
 import Footer from "../components/Footer";
 import "../components/Home.css";
@@ -98,7 +98,13 @@ export default function Home() {
         })}
       </div>
       <div className="header2">
-        <Pagination apiUrl={apiUrl} />
+        <Paginado
+          apiUrl={apiUrl}
+          // dogsPerPage={dogsPerPage}
+          // allDogs={allDogs.length}
+          // pagination={pagination}
+          // currentPage={currentPage}
+        />
       </div>
       <Footer />
     </div>

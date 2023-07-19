@@ -114,7 +114,11 @@ export default function Form() {
       <div className="contenedor-completo">
         <h1 className="fondo-verde">Crea tu perro!!</h1>
         <form className="fondo-verde" onSubmit={handleSubmit}>
-          {/* <div className="form-input-cont"> */}
+          <div>
+            <button className="detail-container-button" type="submit">
+              Crear Perro
+            </button>
+          </div>
           <label>Nombre: </label>
           <input
             type="text"
@@ -123,8 +127,6 @@ export default function Form() {
             onChange={handleChange}
           />
           {errors.name && <p className="error">{errors.name}</p>}
-          {/* </div> */}
-          {/* <div className="form-input-cont"> */}
           <label>Altura mínima: </label>
           <input
             type="number"
@@ -133,8 +135,6 @@ export default function Form() {
             onChange={handleChange}
           />
           {errors.heightMin && <p className="error">{errors.heightMin}</p>}
-          {/* </div> */}
-          {/* <div className="form-input-cont"> */}
           <label>Altura máxima: </label>
           <input
             type="number"
@@ -143,8 +143,6 @@ export default function Form() {
             onChange={handleChange}
           />
           {errors.heightMax && <p className="error">{errors.heightMax}</p>}
-          {/* </div> */}
-          {/* <div className="form-input-cont"> */}
           <label>Peso mínimo: </label>
           <input
             type="number"
@@ -153,8 +151,6 @@ export default function Form() {
             onChange={handleChange}
           />
           {errors.weightMin && <p className="error">{errors.weightMin}</p>}
-          {/* </div> */}
-          {/* <div className="form-input-cont"> */}
           <label>Peso máximo: </label>
           <input
             type="number"
@@ -163,8 +159,6 @@ export default function Form() {
             onChange={handleChange}
           />
           {errors.weightMax && <p className="error">{errors.weightMax}</p>}
-          {/* </div> */}
-          {/* <div className="form-input-cont"> */}
           <label>Imagen: </label>
           <input
             type="text"
@@ -173,8 +167,6 @@ export default function Form() {
             onChange={handleChange}
           />
           {errors.image && <p className="error">{errors.image}</p>}
-          {/* </div> */}
-          {/* <div className="form-input-cont"> */}
           <label>Años de vida: </label>
           <input
             type="number"
@@ -183,7 +175,6 @@ export default function Form() {
             onChange={handleChange}
           />
           {errors.life_span && <p className="error">{errors.life_span}</p>}
-          {/* </div> */}
 
           <select onChange={handleSelect}>
             <option value="">Seleccione un temperamento</option>
@@ -202,11 +193,6 @@ export default function Form() {
                 </button>
               </div>
             ))}
-          </div>
-          <div>
-            <button className="detail-container-button" type="submit">
-              Crear Perro
-            </button>
           </div>
         </form>
       </div>

@@ -5,7 +5,7 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 3rem;
+  height: 2rem;
   justify-content: center;
   overflow: hidden;
   background: #f1f1f1;
@@ -23,15 +23,17 @@
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   font-size: 16px;
   position: absolute;
-  top: 80px;
+  top: 60px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
 }
 .data-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 20px;
+  top: 40px;
 }
 .header2 {
   font-family: "Epilogue";
@@ -46,7 +48,7 @@
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   font-size: 16px;
   position: absolute;
-  top: 120px;
+  top: 75px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
