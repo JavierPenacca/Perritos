@@ -2,6 +2,7 @@
 const initialState = {
     dogs: [],
     detail: [],
+    searchResults: [],
     temperaments: [],
     allDogs: [],
   };
@@ -36,7 +37,7 @@ const initialState = {
       case 'GET_NAME_DOG':
         return {
           ...state,
-          dogs: action.payload,
+          searchResults: action.payload,
         };
       case 'GET_TEMPERAMENTS':
         return {
@@ -68,6 +69,31 @@ const initialState = {
           ...state,
           dogs: sortedArr,
         };
+      case 'ORDER_BY_WEIGHT':
+        let sortedArrW =
+        action.payload === 'asc'
+          ? state.dogs.sort(function (a, b) {
+              if (a.weightMax > b.weightMax) {
+                return 1;
+              }
+              if (b.weightMax > a.weightMax) {
+                return -1;
+              }
+              return 0;
+            })
+          : state.dogs.sort(function (a, b) {
+              if (a.weightMax > b.weightMax) {
+                return -1;
+              }
+              if (b.weightMax > a.weightMax) {
+                return 1;
+              }
+              return 0;
+            });
+      return {
+        ...state,
+        dogs: sortedArrW,
+      };   
       case 'GET_DETAILS':
         return {
           ...state,
