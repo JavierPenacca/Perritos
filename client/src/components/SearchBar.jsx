@@ -8,41 +8,38 @@ import Logo2 from "../assest/Logo-2.jpg";
 
 export default function SearchBar() {
   const dispatch = useDispatch();
-  const [name, setName] = useState("");
   const history = useHistory();
+  const [name, setName] = useState("");
 
-  function handleInputChange(e) {
-    e.preventDefault();
+  const handleInputChange = (e) => {
     setName(e.target.value);
-  }
-  function handleSubmit(e) {
+  };
+  const handleSubmit = (e) => {
     e.preventDefault();
+    if (name.trim() !== "") {
     dispatch(getNameDog(name));
-    setName("");
     history.push("/search");
-  }
+    setName("");
+    }
+  };
 
   return (
     <div className="nav-container">
       <div className="img-container">
         <Link to="/">
-          {" "}
           <img src={Logo2} alt="Logo2" />
         </Link>
       </div>
       <div>
-        <input
-          type="text"
-          placeholder="Enter dog name..."
-          value={name}
-          onChange={(e) => handleInputChange(e)}
-        />
-        <button
-          type="submit"
-          onClick={(e) => handleSubmit(e)}
-        >
-          Buscar
-        </button>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Enter dog name..."
+            value={name}
+            onChange={handleInputChange}
+          />
+          <button type="submit" >Buscar</button>
+        </form>
       </div>
       <Link to="/form">
         <button className="nav-link">Crear una raza de perro</button>

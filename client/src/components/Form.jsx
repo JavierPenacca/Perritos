@@ -56,17 +56,10 @@ export default function Form() {
       ...prevInput,
       [name]: value,
     }));
-    // validate((prevInput) => ({
-    //   ...prevInput,
-    //   [name]: value,
-    // }));
   }
 
   function handleSelect(e) {
     const selectedTemperament = e.target.value;
-    // console.log(selectedTemperament);
-    // console.log("----");
-    // console.log(input.temperament);
     setInput((prevInput) => ({
       ...prevInput,
       temperament: [...prevInput.temperament, selectedTemperament],

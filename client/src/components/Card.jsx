@@ -12,7 +12,7 @@ export default function Card({
   weightMax,
   image,
   temperament,
-  isLocalData // Agrega esta prop para indicar si los datos provienen de la base de datos local
+  isLocalData
 }) {
   let weightTxt = " - - ";
   if (weightMin && weightMax) {
@@ -23,13 +23,15 @@ export default function Card({
     }
   }
 
-  const imageUrl = isLocalData ? image : API_URL + image;
+  const imageUrl = isLocalData ? image : API_URL + image.url;
 
   return (
     <div className="card">
       <Link to={`/detail/${id}`}>
         <div className="card-header">
-          <img src={imageUrl ?? placeholder} alt={name} loading="lazy" />
+          <img src={imageUrl ?? placeholder} alt={name}
+          //  loading="lazy"
+            />
         </div>
         <div className="card-body">
           <h3>{name}</h3>
