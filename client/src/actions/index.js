@@ -35,6 +35,13 @@ export function orderByName(payload) {
     };
 }
 
+export function orderByWeightMax(payload) {
+    return {
+        type: 'ORDER_BY_WEIGHT',
+        payload,
+    };
+}
+
 export function filterDogsByTemperament(payload) {
     return {
         type: 'FILTER_BY_TEMPERAMENT',
